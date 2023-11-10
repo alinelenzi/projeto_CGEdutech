@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Edutech</title>
+    <link rel="stylesheet" href="./src/style/contato.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a href="./index.html">Home</a>
+            <a href="./Sobre.html">Sobre nós</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./vagas.html">Trabalhe conosco</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="contato">
+        <h1>Contato</h1>
+        <p>Oi, tudo bem? Fale com a gente!<span> ;)</span></p>
+        <form action="" id="formulario" formulario>
+            <div>
+                <labeL>Nome:</labeL>
+                <input type="text" name="nome" placeholder="Informe seu nome" minlength="3" required/>
+            </div>
+            <div>
+                <labeL>E-mail:</labeL>
+                <input type="email" name="email" placeholder="nome@gmail.com" minlength="6" required>
+            </div>
+            <div>
+                <labeL>Telefone:</labeL>
+                <input type="tel" name="telefone" placeholder="(27)98841-0000">
+            </div>
+            <div>
+                <labeL>Estado:</labeL>
+                <select id="estado" required>
+                    <option value="" disabled selected>--</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div>
+                <labeL>Mensagem:</labeL>
+                <textarea name="mensagem" placeholder="Mensagem"  rows="5" cols="33"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p class="endereco">Rua Vergueiro, 3185 - Vila Mariana, São Paulo</p>
+        <p class="endereco">Telefone (11) 5571-2751</p>
+    </footer>
+    <script>
+        const formulario = document.querySelector("[formulario]"); 
+        formulario.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            alert("Contato enviado com sucesso!")
+    
+            window.location.href = './index.html';
+
+
+        });
+
+    </script>
+</body>
+</html>

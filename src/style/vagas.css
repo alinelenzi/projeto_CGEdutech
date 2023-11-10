@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteudo{
+    margin-bottom: 2%;
+}
+.conteudo-vaga{
+    margin-top: 7%;
+}
+.conteudo-vaga h1{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color: #35B276;
+    font-size: 1.25rem;
+    margin-top: 4%;
+}
+.conteudo-vaga p, li{
+    color: #347571;
+    font-size: 1.15rem;
+    margin: 10px 5%;
+}
+.conteudo-vaga p{
+    font-weight: bold;
+    margin: 20px 4%;
+}
+.botao{
+    text-align:right;
+    margin-right: 4%;
+}
+.botao a{
+    background-color: #5EC57E;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-family:  'Open Sans', sans-serif;
+    border-radius: 5px;
+}
+@media(max-width: 450px){
+    .conteudo{
+        margin-top: 35%;
+    }
+}
+

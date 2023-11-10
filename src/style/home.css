@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.conteudo-home{
+    position: absolute;
+    display: flex;
+    margin-top: 5%;
+}
+.conteudo-img{
+    width: 100%;
+    height: 100vh;
+}
+.conteudo-home a{
+    background-color: #5EC57E;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    padding: 8px 25px;
+    text-decoration: none;
+    color: white;
+    position: fixed;
+    left: 15%;
+    top:70%;
+}
+@media(max-width: 450px){
+    .conteudo-home{
+        margin-top: 10%;
+    }
+}

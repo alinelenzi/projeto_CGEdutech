@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GG Edutech</title>
+    <link rel="stylesheet" href="./src/style/contato.css">
+    <link rel="stylesheet" href="./src/style/base.css">
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <a href="./index.html">Home</a>
+            <a href="./Sobre.html">Sobre nós</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./vagas.html">Trabalhe conosco</a>
+            <a href="./contato.html">Contato</a>
+        </nav>
+    </header>
+    <main class="contato">
+        <h1>Formulário de Candidatura</h1>
+        <p>Preencha o formulário de inscrição</span></p>
+        <form action="" id="formulario" formulario>
+            <div>
+                <labeL>Candidato:</labeL>
+                <input type="text" name="nome" placeholder="Informe seu nome completo" minlength="3" required/>
+            </div>
+            <div>
+                <labeL>Telefone:</labeL>
+                <input type="tel" name="telefone" placeholder="(27)98841-0001">
+            </div>
+            <div>
+                <labeL>Linkedin:</labeL>
+                <input type="text" name="linkedin"  minlength="3" />
+            </div>
+            <div>
+                <labeL>GitHub:</labeL>
+                <input type="text" name="github" minlength="3" />
+            </div>
+            <div class="radio">
+                <label for="resposta-front">Frontend</label>
+                <input type="radio" id="resposta-front" name="resposta" value="front" required>
+                <label for="resposta-back">Backend</label>
+                <input type="radio" id="resposta-back" name="resposta" value="back" >
+                <label for="resposta-full">FullStack</label>
+                <input type="radio" id="resposta-full" name="resposta" value="full" >
+            </div>
+            <div>
+                <labeL>Currículo:</labeL>
+                <input type="file" />
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p class="endereco">Rua Vergueiro, 3185 - Vila Mariana, São Paulo</p>
+        <p class="endereco">Telefone (11) 5571-2751</p>
+    </footer>
+    <script>
+        const formulario = document.querySelector("[formulario]"); 
+        formulario.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            alert("Contato enviado com sucesso!")
+    
+            window.location.href = './index.html';
+
+
+        });
+
+    </script>
+</body>
+</html>

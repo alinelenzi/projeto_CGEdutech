@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color:#5EC57E;
+    margin-bottom: 20px;
+}
+p{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color:#347571;
+}
+span{
+    text-align: center;
+    font-family: 'Source Sans 3', sans-serif;
+    color:#5EC57E;
+
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
+    margin-top: 8%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
+}
+
+input, textarea, select {
+    margin: 16px 0 16px 0;
+    width: 430px;
+}
+input, select{
+    height: 32px;
+}
+select{
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #5EC57E;
+    border: none;
+    height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+label{
+    font-family: 'Source Sans 3', sans-serif;
+    color:#347571;
+}
+footer p{
+    color:#737373;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+.radio{
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+@media(max-width: 450px){
+    .contato{
+        margin-top: 35%;
+    }
+}
