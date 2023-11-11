@@ -37,6 +37,9 @@
     font-family:  'Open Sans', sans-serif;
     border-radius: 5px;
 }
+.img-sobre{
+    width: 95%;
+}
 @media(max-width: 450px){
     .conteudo{
         margin-top: 35%;
